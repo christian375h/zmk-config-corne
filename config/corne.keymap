@@ -13,6 +13,10 @@
 };
 
 / {
+        chosen {
+                zmk,backlight = &backlight;
+        };
+
         keymap {
                 compatible = "zmk,keymap";
 
@@ -56,5 +60,5 @@
                              &kp LGUI &trans   &kp SPACE   &kp RET   &trans    &kp RALT
                         >;
                 };
-        };
+        };  
 };
