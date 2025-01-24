@@ -25,10 +25,10 @@
 // | SHFT |  Z  |  X  |  C  |  V  |  B  |           |  N  |  M   |  ,  |  .  |  /  | SHIFT|
 //                    | GUI | SPE | LWR |           | RSE | SPE | ALT |
                         bindings = <
-   &kp ESC   &kp Q &kp W &kp E &kp R &kp T   &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
-   &kp LCTRL &kp A &kp S &kp D &kp F &kp G   &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
-   &kp LSHFT &kp Z &kp X &kp C &kp V &kp B   &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHIFT 
-                  &kp LGUI &kp SPACE  &mo 1  &mo 2 &kp SPACE &kp RET 
+   &kp ESC   &kp Q &kp W &kp E &kp R &kp T           &kp Y &kp U  &kp I     &kp O   &kp P    &kp BSPC
+   &kp LCTRL &kp A &kp S &kp D &kp F &kp G           &kp H &kp J  &kp K     &kp L   &kp SEMI &kp SQT
+   &kp LSHFT &kp Z &kp X &kp C &kp V &kp B           &kp N &kp M  &kp COMMA &kp DOT &kp FSLH &kp RSHIFT 
+                 &kp LGUI &kp SPACE  &mo 1           &mo 2 &kp SPACE &kp RET 
                         >;
                 };
                 lower_layer {
@@ -38,10 +38,10 @@
 // | CAPS |     |     |     |     |K_PP |              |     |     |     |     |     |     |
 //                    | GUI |SPACE|     |              | ENT |SPACE| ALT |
                         bindings = <
-   &kp ESC    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5                &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp DEL
+   &kp TAB    &kp N1       &kp N2       &kp N3       &kp N4       &kp N5                &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp DEL
    &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4          &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
-   &kp CAPS  &trans  &trans    &trans    &trans   &rgb_ug RGB_ON             S          &trans   &trans   &trans &trans  &trans &trans
-                                    &kp LGUI   &kp SPACE    &kp K_PP                      &kp RET  &kp SPACE   &kp RALT
+   &kp CAPS  &kp K_PP  &trans    &trans    &trans    &trans                             &trans   &trans   &trans &trans  &trans &trans
+                                 &kp LALT  &kp SPACE &trans                             &kp RET  &kp SPACE   &kp RALT
                         >;
                 };
 
