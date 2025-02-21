@@ -19,6 +19,7 @@
                 compatible = "zmk,keymap";
 
                 default_layer {
+                        display-name = "Letters";
 // -----------------------------------------------------------------------------------------
 // |  ESC |  Q  |  W  |  E  |  R  |  T  |           |  Y  |  U   |  I  |  O  |  P  | BSPC |
 // | CTRL |  A  |  S  |  D  |  F  |  G  |           |  H  |  J   |  K  |  L  |  ;  |  '   |
@@ -32,6 +33,7 @@
                         >;
                 };
                 lower_layer {
+                        display-name = "Numbers";
 // -----------------------------------------------------------------------------------------
 // |  TAB |  1  |  2  |  3  |  4  |  5  |              |  6  |  7  |  8  |  9  |  0  | BSPC|
 // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |              | LFT | DWN |  UP | RGT |     |     |
@@ -46,6 +48,7 @@
                 };
 
                 raise_layer {
+                        display-name = "Symbols";
 // -----------------------------------------------------------------------------------------
 // |  TAB |  !  |  @  |  #  |  $  |  %  |             |  ^  |  &  |  *  |  (  |  )  | DEL |
 // | CTRL |     |     |     |     |     |             |  -  |  =  |  [  |  ]  |  \  |  `  |
@@ -57,6 +60,20 @@
    &kp LSHFT &trans   &trans &trans   &trans   &trans      &kp UNDER &kp PLUS  &kp LBRC  &kp RBRC &kp PIPE &kp TILDE
                              &kp LGUI   &kp SPACE   &trans   &kp RET   &kp SPACE   &kp RALT
                         >;
+                };
+                adjust_layer {
+                        display-name = "Function";
+// -----------------------------------------------------------------------------------------
+// |  F1  |  F2  |  F3  |  F4  |  F5  |  F6  |             |  F7  |  F8  |  F9  |  F10 |  F11 |  F12 |
+// | CTRL |      |      |      |      |      |             |      |      |      |      |      |      |
+// | SHFT |      |      |      |      |      |             |      |      |      |      |      |      |
+//                      |      |      |      |             |      |      |      |
+                        bindings = <
+   &kp F1  &kp F2  &kp F3  &kp F4  &kp F5  &kp F6            &kp F7  &kp F8  &kp F9  &kp F10  &kp F11  &kp F12
+   &reset  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans   &trans   &trans
+   &trans  &trans  &trans  &trans  &trans  &trans            &trans  &trans  &trans  &trans   &trans   &trans
+                           &trans  &trans  &trans            &trans  &trans  &trans
+            >;
                 };
         };  
 };
